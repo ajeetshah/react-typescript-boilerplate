@@ -2,7 +2,9 @@ import * as React from 'react';
 import { Link } from 'react-router-dom'
 import Routes from 'src/routes/routes';
 import './app.css';
-import { RouteComponentProps } from 'react-router'
+import { RouteComponentProps } from 'react-router';
+import { prettyLog } from 'src/utils/logUtil';
+
 //import '../../assets/styles/scss/site.scss';
 //import logo from '../../logo.svg';
 
@@ -12,7 +14,8 @@ export interface Props extends RouteComponentProps<any> {
 }
 
 export default class App extends React.Component<Props, any>{
-    componentWillMount() {
+    componentDidMount() {
+        prettyLog('FinoptSys');
         if (this.props.startLoader) {
             this.props.startLoader('started');
         }

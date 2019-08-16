@@ -11,7 +11,7 @@ class TestPage extends React.Component<Props, any> {
         super(props, state);
     }
 
-    componentWillMount(){
+    componentDidMount(){
         if(this.props.getData){
             this.props.getData()
         }       
@@ -20,11 +20,11 @@ class TestPage extends React.Component<Props, any> {
     render() { 
         return (
             <div>
-                <div>hi there 1</div>
+                {/* <div>hi there 1</div> */}
                 <div className="alert alert-primary" role="alert">
                     A simple primary alert—check it out!
                 </div>
-                <div>{this.props.data}</div>
+                {/* <div>{this.props.data}</div> */}
             </div>
         );
     }

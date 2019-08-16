@@ -2,6 +2,11 @@ import LoginPage from 'src/pages/login/loginPage';
 import TestPage from 'src/pages/test/testContainer';
 import HomePage from 'src/pages/home/homePage';
 
+export const paths = {
+    test: '/test',
+    login: '/login'
+};
+
 export const routes: any = [
     {
         path: '/',

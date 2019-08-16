@@ -1,4 +1,5 @@
 Todo:
+* remove errors / warnings from console log
 * create paths constant
 * find a pivot chart library & do a POC
 * find a sankey chart library & do a POC
