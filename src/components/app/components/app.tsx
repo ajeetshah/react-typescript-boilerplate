@@ -21,8 +21,8 @@ class App extends React.Component<Props, any>{
     render() {
         return (
             <div>
-                <div>{this.props.message}</div>
-                <Link to='/test'>test</Link>
+                {/* <div>{this.props.message}</div> */}
+                {/* <Link to='/test'>test</Link> */}
                 <Routes/>
             </div>
         );
