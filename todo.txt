@@ -9,6 +9,7 @@ Setup:
 * create .editorconfig file
 * create .env files
 * create i18
+* choose a font-family
 
 Enhancement:
 * Make PWA
