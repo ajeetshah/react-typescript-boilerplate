@@ -21,6 +21,9 @@ class TestPage extends React.Component<Props, any> {
         return (
             <div>
                 <div>hi there 1</div>
+                <div className="alert alert-primary" role="alert">
+                    A simple primary alert—check it out!
+                </div>
                 <div>{this.props.data}</div>
             </div>
         );
