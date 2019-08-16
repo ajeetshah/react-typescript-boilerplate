@@ -8,7 +8,7 @@ interface State {
 
 }
 
-export default class FITextField extends React.Component<Props, State> {
+export default class FsTextField extends React.Component<Props, State> {
   render() {
     return (
       <React.Fragment>
@@ -25,5 +25,4 @@ export default class FITextField extends React.Component<Props, State> {
       </React.Fragment>
     );
   }
-
 }

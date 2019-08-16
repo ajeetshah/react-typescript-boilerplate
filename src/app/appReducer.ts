@@ -1,4 +1,4 @@
-import { LOADER_START, LOADER_STOP} from '../actions/appAction';
+import { LOADER_START, LOADER_STOP} from './appAction';
 
 export function LoaderReducer(state = <any>{}, action: any): any {
     switch (action.type) {

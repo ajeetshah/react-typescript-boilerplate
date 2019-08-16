@@ -1,7 +1,7 @@
 import * as React from 'react';
-import FIContainedButton from 'src/components/common/components/fiButtons/fiContainedButton';
-import '../styles/login.css';
-import FITextField from 'src/components/common/components/fiTextField';
+import FsContainedButton from 'src/components/buttons/fsContainedButton';
+import './login.css';
+import FsTextField from 'src/components/fsTextField';
 
 
 export default class LoginPage extends React.Component {
@@ -11,11 +11,10 @@ export default class LoginPage extends React.Component {
         <div id="outer">
           <div id="container">
             <h1>Login</h1>
-            <FIContainedButton label="Login" />
-            <FITextField label="InputText" />
+            <FsContainedButton label="Login" />
+            <FsTextField label="InputText" />
           </div>
         </div>
-
       </React.Fragment>
     );
   }

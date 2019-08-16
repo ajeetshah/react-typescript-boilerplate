@@ -1,16 +1,10 @@
-import TestPage from '../components/testPage/containers/testContainer';
-import TodoPage from '../components/todo/containers/todoContainer';
-import LoginPage from '../components/loginPage/components/loginComponents';
+import LoginPage from 'src/pages/login/loginPage';
+import TestPage from 'src/pages/test/testContainer';
 
 export const routes: any = [
     {
         path: '/test',
         component: TestPage,
-        childRoutes: []
-    },
-    {
-        path: '/todo',
-        component: TodoPage,
         childRoutes: []
     },
     {

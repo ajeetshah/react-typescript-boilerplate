@@ -1,6 +1,6 @@
-import { REST_CALL } from '../actions/todoAction';
+import { REST_CALL } from './testActions';
 
-export function TodoReducer(state = <any>{}, action: any): any {
+export function TestReducer(state = {}, action) {
     switch (action.type) {
         case REST_CALL.succeeded:
             // return {

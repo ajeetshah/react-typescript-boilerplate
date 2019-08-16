@@ -1,19 +1,19 @@
 import * as React from 'react';
-import {Link} from 'react-router-dom'
-import Routes from '../../../routes/components/Routes';
-import '../style/app.css';
-import {RouteComponentProps} from 'react-router'
+import { Link } from 'react-router-dom'
+import Routes from 'src/routes/routes';
+import './app.css';
+import { RouteComponentProps } from 'react-router'
 //import '../../assets/styles/scss/site.scss';
 //import logo from '../../logo.svg';
 
 export interface Props extends RouteComponentProps<any> {
     message?: string;
-    startLoader?:Function;
+    startLoader?: Function;
 }
 
-class App extends React.Component<Props, any>{
-    componentWillMount(){
-        if(this.props.startLoader){
+export default class App extends React.Component<Props, any>{
+    componentWillMount() {
+        if (this.props.startLoader) {
             this.props.startLoader('started');
         }
     }
@@ -23,10 +23,8 @@ class App extends React.Component<Props, any>{
             <div>
                 {/* <div>{this.props.message}</div> */}
                 {/* <Link to='/test'>test</Link> */}
-                <Routes/>
+                <Routes />
             </div>
         );
     }
 }
-
-export default App;

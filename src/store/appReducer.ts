@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 import { reducer as formReducer } from 'redux-form';
-import {LoaderReducer} from '../components/app/reducers/appReducer';
-import {TestReducer} from '../components/testPage/reducers/testReducer';
+import { TestReducer } from 'src/pages/test/testReducer';
+import { LoaderReducer } from 'src/app/appReducer';
 
 interface stateInterface {
     loader: any,
@@ -10,8 +10,8 @@ interface stateInterface {
 }
 
 const initialState = <stateInterface>{
-    loader:{loading:false, message:'initial state'},
-    testPage:null
+    loader: { loading: false, message: 'initial state' },
+    testPage: null
 };
 
 // Define Reducers
@@ -39,4 +39,4 @@ const rootReducer = combineReducers({
     //   userPreferences: UserPreferencesReducer
 });
 
-export {stateInterface, rootReducer, initialState}
+export { stateInterface, rootReducer, initialState }

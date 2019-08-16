@@ -1,0 +1,8 @@
+Todo:
+* find a pivot chart library & do a POC
+* find a sankey chart library & do a POC
+
+Setup:
+1. create .editorconfig file
+2. create .env files
+3. create i18
